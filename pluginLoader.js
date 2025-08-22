@@ -5,8 +5,8 @@ import {
     Get2Plugin,
     Delete2Plugin,
     Patch2Plugin
-} from 'datastar-default-actions.js';
-import {SignalsPlugin} from 'datastar-signals.js';
+} from '/datastar-plugins/datastar-default-actions.js';
+import {SignalsPlugin} from '/datastar-plugins/datastar-signals.js';
 
 import {load} from 'https://cdn.jsdelivr.net/gh/starfederation/datastar@main/bundles/datastar.js';
 
