@@ -38,6 +38,8 @@ This plugin provides read & write access to datastar signals. The plugin gets re
 
 It sets `window.Signals` which can be used to access signals. A signal `foo` can be accessed as `Signals.foo` and can be updated as `Signals.foo = 10`. The updates to the signal are reactive. 
 
+This can serve as poor man's inspector of datastar signals.
+
 This also means one can use the `Signals` in their JS code.
 
 It also sets a helper function `window.printSignals` which can be used to print all signals to console.
