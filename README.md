@@ -110,8 +110,4 @@ Note:
 
 # Demo
 
-See: https://sudeep9.github.io/datastar-plugins/
-
-Or
-
 Open the `index.html` using a web server
