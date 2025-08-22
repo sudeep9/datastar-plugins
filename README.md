@@ -78,7 +78,8 @@ This token can be set from the backend using the excute script option.
 
 # Loading the plugins
 
-The following file which loads the plugins in the following manner: 
+The following code loads the plugin `SignalsPlugin`: 
+
 ```
 import {SignalsPlugin} from 'datastar-signals.js';
 import {load} from 'https://cdn.jsdelivr.net/gh/starfederation/datastar@main/bundles/datastar.js';
@@ -92,6 +93,8 @@ console.log('loaded datastar plugins', plugins.map(p => p.name));
 ```
 
 See `pluginLoader.js` for a readymade script. Load this file as module in the html.
+
+This way you can choose only the ones you need.
 
 ```
 <script type="module" src="pluginLoader.js"></script>
