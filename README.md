@@ -110,4 +110,8 @@ Note:
 
 # Demo
 
-Open the `index.html`. In vscode you can use live server extension. I
+See: https://sudeep9.github.io/datastar-plugins/
+
+Or
+
+Open the `index.html` using a web server
