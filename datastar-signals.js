@@ -1,5 +1,3 @@
-import {load} from '/static/datastar.js';
-
 function printSignals() {
     if (!window.Signals) {
         console.warn('Signals not initialized yet');

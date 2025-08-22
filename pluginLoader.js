@@ -5,10 +5,10 @@ import {
     Get2Plugin,
     Delete2Plugin,
     Patch2Plugin
-} from '/static/datastar-default-actions.js';
-import {SignalsPlugin} from '/static/datastar-signals.js';
+} from '/datastar-default-actions.js';
+import {SignalsPlugin} from '/datastar-signals.js';
 
-import {load} from '/static/datastar.js';
+import {load} from 'https://cdn.jsdelivr.net/gh/starfederation/datastar@main/bundles/datastar.js';
 
 const plugins = [
     SignalsPlugin,

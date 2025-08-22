@@ -5,8 +5,8 @@ Collection of miscellaneous plugins for datastar framework
 
 The following file which loads the plugins in the following manner: 
 ```
-import {SignalsPlugin} from '/static/datastar-signals.js';
-import {load} from '/static/datastar.js';
+import {SignalsPlugin} from 'datastar-signals.js';
+import {load} from 'https://cdn.jsdelivr.net/gh/starfederation/datastar@main/bundles/datastar.js';
 
 const plugins = [
     SignalsPlugin,
@@ -19,7 +19,7 @@ console.log('loaded datastar plugins', plugins.map(p => p.name));
 See `pluginLoader.js` for a readymade script. Load this file as module in the html.
 
 ```
-<script type="module" src="/static/pluginLoader.js"></script>
+<script type="module" src="pluginLoader.js"></script>
 ```
 
 Note:

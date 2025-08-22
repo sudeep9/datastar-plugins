@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Datastar plugins example</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+
+<body>
+    <div class="flex flex-col p-4 space-y-4 w-150">
+
+        <ul class="text-gray-600">
+            <li>1. Open the console</li>
+            <li>2. Try pressing Ctrl+Shift+S to print all signal</li>
+        </ul>
+
+        <input class="border border-gray-500" type="text" data-bind="foo" class="p-2"
+            placeholder="Enter text" value="Change me and see my length below"/>
+        <div class="flex space-x-4">
+            <span>Length</span><span data-text="$foo.length"></span>
+        </div>
+
+        <label class="text-gray-600">
+            Try changing Signals.count in console to update the count directly
+        </label>
+        <div class="flex space-x-4 items-center">
+            <button class="bg-blue-500 text-white p-2 rounded"
+                data-signals-count="1" data-on-click="$count += 1">Inc Count</button>
+            <div data-text="$count"></div>
+        </div>
+
+    </div>
+    <script type="module" src="pluginLoader.js"></script>
+    <script>
+        document.addEventListener('keydown', (e) => {
+            if (e.ctrlKey && e.shiftKey && e.key === 'S') {
+                printSignals();
+            }
+        });
+    </script>
+</body>
+
+</html>
