@@ -10,8 +10,8 @@ Awesome hypermedia framework: https://data-star.dev/
 - [Loading the plugins](#loading-the-plugins)
 - [Plugins](#plugins)
 
-    - [Access to signals in JS](#datastar-signals.js)
-    - [Default args to fetch APIs](#datastar-default-actions.js)
+    - [Access to signals in JS](#datastar-signalsjs)
+    - [Default args to fetch APIs](#datastar-default-actionsjs)
 
 - [Demo](#demo)
 
