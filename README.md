@@ -1,6 +1,20 @@
 # About
 Collection of miscellaneous plugins for datastar framework
 
+# Credits
+
+Awesome hypermedia framework: https://data-star.dev/
+
+# TOC
+
+- [Loading the plugins](#loading-the-plugins)
+- [Plugins](#plugins)
+
+    - [Access to signals in JS](#datastar-signals.js)
+    - [Default args to fetch APIs](#datastar-default-actions.js)
+
+- [Demo](#demo)
+
 # Loading the plugins
 
 The following file which loads the plugins in the following manner: 
@@ -90,3 +104,7 @@ window.DatastarFetchArgs = {
 ```
 The default headers are merged with the ones provided at call site.
 This token can be set from the backend using the excute script option.
+
+# Demo
+
+Open the `index.html`. In vscode you can use live server extension. I
