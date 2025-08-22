@@ -7,42 +7,13 @@ Awesome hypermedia framework: https://data-star.dev/
 
 # TOC
 
-- [Loading the plugins](#loading-the-plugins)
 - [Plugins](#plugins)
 
     - [Access to signals in JS](#datastar-signalsjs)
     - [Default args to fetch APIs](#datastar-default-actionsjs)
-
+- [Using/Loading the plugins](#loading-the-plugins)
 - [Demo](#demo)
 
-# Loading the plugins
-
-The following file which loads the plugins in the following manner: 
-```
-import {SignalsPlugin} from 'datastar-signals.js';
-import {load} from 'https://cdn.jsdelivr.net/gh/starfederation/datastar@main/bundles/datastar.js';
-
-const plugins = [
-    SignalsPlugin,
-];
-
-load(...plugins);
-console.log('loaded datastar plugins', plugins.map(p => p.name));
-```
-
-See `pluginLoader.js` for a readymade script. Load this file as module in the html.
-
-```
-<script type="module" src="pluginLoader.js"></script>
-```
-
-Note:
-
-1. Change the paths as per your env.
-
-2. Do not load the `datastar.js` using `<script>`. It is imported in the plugin loader script anyway.
-
-3. If the `<script>` is used to load the datastar separately then you might get runtime errors.
 
 # Plugins
 
@@ -104,6 +75,35 @@ window.DatastarFetchArgs = {
 ```
 The default headers are merged with the ones provided at call site.
 This token can be set from the backend using the excute script option.
+
+# Loading the plugins
+
+The following file which loads the plugins in the following manner: 
+```
+import {SignalsPlugin} from 'datastar-signals.js';
+import {load} from 'https://cdn.jsdelivr.net/gh/starfederation/datastar@main/bundles/datastar.js';
+
+const plugins = [
+    SignalsPlugin,
+];
+
+load(...plugins);
+console.log('loaded datastar plugins', plugins.map(p => p.name));
+```
+
+See `pluginLoader.js` for a readymade script. Load this file as module in the html.
+
+```
+<script type="module" src="pluginLoader.js"></script>
+```
+
+Note:
+
+1. Change the paths as per your env.
+
+2. Do not load the `datastar.js` using `<script>`. It is imported in the plugin loader script anyway.
+
+3. If the `<script>` is used to load the datastar separately then you might get runtime errors.
 
 # Demo
 
